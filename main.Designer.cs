@@ -170,6 +170,6 @@
         private System.Windows.Forms.ToolTip TT_Spotify;
         private System.Windows.Forms.ToolTip TT_Microsoft;
         private System.Windows.Forms.ToolTip TT_AdobeCC;
-    }
+        }
 }
 

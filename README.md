@@ -5,7 +5,8 @@
 
 ## How it works
 
-Predefined buttons for specific applications will open the folders containing log and cache files that can be safely deleted.
+- Predefined buttons for specific applications will open the folders containing log and cache files that can be safely deleted.
+- The app does NOT delete any files, it simply showcases and opens the file locations for easy access.
 
 ### Currently Added Apps
 
@@ -13,6 +14,11 @@ Predefined buttons for specific applications will open the folders containing lo
 - Studio Code
 - Adobe CC apps
 - Microsoft (Windows-related files)
+
+
+
+
+
 
 
 

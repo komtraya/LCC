@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LCC
@@ -83,6 +77,8 @@ namespace LCC
                 $@"{systemC}Windows\Temp",
                 $@"{ userPath}\AppData\Local\D3DSCache",
                 $@"{ userPath}\AppData\Local\Package Cache",
+                $@"{ userPath}\AppData\Local\CrashDumps"
+
             };
             foreach (string path in MicrosoftGarbage)
             {
