@@ -118,5 +118,15 @@ namespace LCC
                 }
             }
         }
-    }
+
+        private void openTaskManager_Click(object sender, EventArgs e)
+            {
+            System.Diagnostics.Process.Start("taskmgr");
+            }
+
+        private void openDiskCleanup_Click(object sender, EventArgs e)
+            {
+            System.Diagnostics.Process.Start("cleanmgr.exe");
+            }
+        }
 }

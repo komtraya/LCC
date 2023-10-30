@@ -40,6 +40,9 @@
             this.TT_AdobeCC = new System.Windows.Forms.ToolTip(this.components);
             this.TT_Spotify = new System.Windows.Forms.ToolTip(this.components);
             this.TT_Microsoft = new System.Windows.Forms.ToolTip(this.components);
+            this.openTaskManager = new System.Windows.Forms.Button();
+            this.TT_SysButtons = new System.Windows.Forms.ToolTip(this.components);
+            this.openDiskCleanup = new System.Windows.Forms.Button();
             this.buttonsContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,12 +141,50 @@
             this.label1.Text = "All files and folders are safe to delete in the folders that open for each app.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // openTaskManager
+            // 
+            this.openTaskManager.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.openTaskManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.openTaskManager.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.openTaskManager.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
+            this.openTaskManager.FlatAppearance.BorderSize = 2;
+            this.openTaskManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openTaskManager.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openTaskManager.Location = new System.Drawing.Point(592, 229);
+            this.openTaskManager.Name = "openTaskManager";
+            this.openTaskManager.Size = new System.Drawing.Size(80, 57);
+            this.openTaskManager.TabIndex = 7;
+            this.openTaskManager.Text = "Task Manager";
+            this.TT_SysButtons.SetToolTip(this.openTaskManager, "Launch Task Manager");
+            this.openTaskManager.UseVisualStyleBackColor = false;
+            this.openTaskManager.Click += new System.EventHandler(this.openTaskManager_Click);
+            // 
+            // openDiskCleanup
+            // 
+            this.openDiskCleanup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.openDiskCleanup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.openDiskCleanup.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.openDiskCleanup.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
+            this.openDiskCleanup.FlatAppearance.BorderSize = 2;
+            this.openDiskCleanup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openDiskCleanup.Font = new System.Drawing.Font("Manrope", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openDiskCleanup.Location = new System.Drawing.Point(592, 292);
+            this.openDiskCleanup.Name = "openDiskCleanup";
+            this.openDiskCleanup.Size = new System.Drawing.Size(80, 57);
+            this.openDiskCleanup.TabIndex = 8;
+            this.openDiskCleanup.Text = "Disk Cleanup";
+            this.TT_SysButtons.SetToolTip(this.openDiskCleanup, "Launch Disk Cleanup");
+            this.openDiskCleanup.UseVisualStyleBackColor = false;
+            this.openDiskCleanup.Click += new System.EventHandler(this.openDiskCleanup_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(13)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.openDiskCleanup);
+            this.Controls.Add(this.openTaskManager);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonsContainer);
             this.Font = new System.Drawing.Font("Manrope", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,6 +211,9 @@
         private System.Windows.Forms.ToolTip TT_Spotify;
         private System.Windows.Forms.ToolTip TT_Microsoft;
         private System.Windows.Forms.ToolTip TT_AdobeCC;
+        private System.Windows.Forms.Button openTaskManager;
+        private System.Windows.Forms.ToolTip TT_SysButtons;
+        private System.Windows.Forms.Button openDiskCleanup;
         }
 }
 
